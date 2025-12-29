@@ -23,7 +23,7 @@ all_value = []
 for i in final_X:
   min_value = final_X[i].min()
   max_value = final_X[i].max()
-  result = st.sidebar.slider(f'Select {i} value'min_value,max_value)
+  result = st.sidebar.slider(f'Select {i} value',min_value,max_value)
   all_value.append(result)
 
 user_X = scaler.transform([all_value])
@@ -52,6 +52,7 @@ st.markdown('''**Design and Developed By: Vishesh Katiyar**''')
                   
   
   
+
 
 
 
